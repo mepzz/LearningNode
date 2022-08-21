@@ -3,7 +3,7 @@
  * @param weightKg 
  * @returns convertedWeight: number
  */
-export function convertWeightKgToLb(weightKg) {
+ export function convertWeightKgToLb(weightKg) {
     const convertedWeight = weightKg * 2.2;
     return convertedWeight; //you are using good coding practices by creating the variable and then returning it. 
 }
@@ -18,7 +18,7 @@ export function convertWeightKgToLb(weightKg) {
  * @param heightCm: number
  * @returns convertedHeight: number
  */
-export function convertHeightCmToFt(heightCm) { //this is how you receive a parameter
+ export function convertHeightCmToFt(heightCm) { //this is how you receive a parameter
     const convertedHeight = heightCm * 0.033 // Set a local variable rather than a global variable. 
                                              // For example... what if you had two functions which BOTH used converted height?
                                              // They'd interfere with each other if they use the same variable.
@@ -26,11 +26,4 @@ export function convertHeightCmToFt(heightCm) { //this is how you receive a para
 }
 
 
-const weightKg = 60;
-const heightCm = 190;
-
-const weightLb = convertWeightKgToLb(weightKg); //we use our variables here, though we just as easily could have written 'const weightLb = convertWeightKgToLb(60);' but that isn't as clear
-const heightFt = convertHeightCmToFt(heightCm);
-
-console.log(weightKg + ' KG converted to LBS is: ' + weightLb + 'LBS.');
-console.log(heightCm + ' Cm converted to feet is ' + heightFt + 'Ft.');
+// export { convertHeightCmToFt, convertWeightKgToLb } from "unitConvertor";
