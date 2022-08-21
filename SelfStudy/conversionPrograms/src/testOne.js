@@ -1,7 +1,4 @@
 import {convertHeightCmToFt, convertWeightKgToLb } from './unitConvertor.js';
-// import convertHeightCmToFt from ".src/unitConvertor";
-// const { convertHeightCmToFt, convertWeightKgToLb } = require('./unitConvertor')       
-
 
 const weightKg = 66;
 const heightCm = 193;
